@@ -2,8 +2,72 @@
 
 body {
 	margin: 0px;
+		
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
 }
 
-img {
-	background:#F1F1FA;
+li{
+	list-style: none;
 }
+
+.menudiv li{
+	float:left;
+	height: 100%;
+	text-align: center;	
+	margin-right:40px;
+	color: #B4C7E7;
+	margin-top: 25px;	
+	font-size:x-large;
+}
+
+.menudiv li a{
+	cursor:default;
+}
+
+.menudiv li a:hover{
+	color:#006BFF;
+}
+
+.menuImg_blog{
+	background: url('../Image/blog_Blue_small.png');
+	float: right; 
+	width:35px;
+	height:35px;
+	background-size: cover;
+	margin-right: 25px;
+	margin-top: 33px;
+}
+
+.menuImg_blog:hover{
+	cursor:hand;
+}
+
+.menuImg_insta{
+	background: url('../Image/instagram_Blue_small.png');
+	float: right; 
+	width:35px;
+	height:35px;
+	background-size: cover;
+	margin-right: 25px;
+	margin-top: 33px;
+}
+
+.menuImg_insta:hover{
+	cursor:hand;
+}
+
+
+.homediv {
+	width: 1903px;
+	height: 936.5px;	
+}
+
+.menudiv{
+	width:1903px;
+	height:25px;	
+	position:fixed;
+}
+
