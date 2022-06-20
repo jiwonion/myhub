@@ -1,38 +1,76 @@
-<link rel="stylesheet" type="text/css" href="/css/home.css">
-<script src="//code.jquery.com/jquery.min.js"></script>
-<script src="/js/home.js" defer></script>
+
 
 
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<meta charset="UTF-8">
-	<title>MARINE GYM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="/js/home.js" defer></script>
+<meta charset="UTF-8">
+<title>MARINE GYM</title>
 </head>
 
 <body>
 
+	<div class="logodiv">
+		<div class="menuImg_Logo"></div>
+	</div>
+
+
 	<div class="menudiv">
-		<ul style="padding-inline-start : 100px;">
-			<li><a class="menu_a">HOME</a></li>
-			<li><a class="menu_a">PROGRAM</a></li>
-			<li><a class="menu_a">TRAINERS</a></li>
-			<li><a class="menu_a">SERVICES</a></li>
-			<li><a class="menu_a">MARCHINE</a></li>
-			<li><a class="menu_a">CONTACT</a></li>
 
-			<div class="menuImg_blog"></div>
-			<div class="menuImg_insta"></div>
-		</ul>
+
+		<div class="menu_sub_div">
+			<ul>
+				<li><a class="menu_a" id="menu_a_line_1">HOME</a></li>
+				<li><a class="menu_a" id="menu_a_line_2">PROGRAM</a></li>
+				<li><a class="menu_a" id="menu_a_line_3">TRAINERS</a></li>
+				<li><a class="menu_a" id="menu_a_line_4">SERVICES</a></li>
+				<li><a class="menu_a" id="menu_a_line_5">MARCHINE</a></li>
+				<li><a class="menu_a" id="menu_a_line_6">CONTACT</a></li>
+
+			</ul>
+
+		</div>
 	</div>
 
-	<div class="homediv">
-		<img src="Image/home_background.jpg" width="100%" height="100%">
+	<div style="position: fixed; right: 0;">
+		<div class="menuImg_blog"></div>
+		<div class="menuImg_insta"></div>
 	</div>
 
+
 	<div class="homediv">
-		<img src="Image/program_background.jpg" width="50%" height="100%">
+		<div
+			style="background: url('Image/home_background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%; height: 100%;">
+
+			<div
+				style="position: absolute; width: 10px; height: 90px; right: 0; top: 50%; margin-right: 30px; margin-top: -44px;">
+				<input class="homediv-input-radio" type='radio' name='page'
+					value='home' checked /> <input class="homediv-input-radio"
+					type='radio' name='page' value='program' /> <input
+					class="homediv-input-radio" type='radio' name='page'
+					value='trainers' /> <input class="homediv-input-radio"
+					type='radio' name='page' value='services' />
+			</div>
+
+		</div>
+	</div>
+
+	<div class="programdiv">
+		<div
+			style="background: url('Image/program_background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 50%; height: 100%;">
+
+		</div>
+	</div>
+
+	<div class="trainersdiv">
+		<div style="background-color: red; width: 100%; height: 100%;">
+
+		</div>
 	</div>
 
 </body>
