@@ -7,7 +7,6 @@ window.onload = function() {
 	}, 100);
 
 	menuColor(1);
-	menuClick();
 }
 
 //세로 스크롤 시에는 고정하고 가로 스크롤시에는 움직이는 경우
@@ -21,7 +20,7 @@ $(function() {
 
 var targetOffset_home = $(".homediv").offset().top - 1;
 var targetOffset_program = $(".programdiv").offset().top - 1;
-var targetOffset_trainers = $(".trainersdiv").offset().top - 1;
+var targetOffset_trainers = $(".trainersdiv").offset().top - 2;
 
 var $w = $(window).scroll(function() {
 	if ($w.scrollTop() >= targetOffset_home) {
@@ -45,19 +44,36 @@ function menuColor(value) {
 		}
 		else {
 			$(id).css({ "color": "#B4C7E7" });
-			
+
 			$(id).hover(function() {
 				$(this).css("color", "#006BFF");
 			}, function() {
 				$(this).css("color", "#B4C7E7");
-			})
+			});
 		}
 	}
 }
 
-function menuClick(){
-		$('#menu_a_line_2').click(function() {				
-			var element = document.getElementById("menu_a_line_2");
-				element.scrollIntoView({behavior:"smooth", block:"end", inline:"nearest"});
-			});
-}
+$(document).ready(function() {
+	$('#menu_a_line_1').click(function() {
+
+		var offset = $('.homediv').offset();
+		$('html').animate({ scrollTop: offset.top }, 400);
+
+	});
+
+	$('#menu_a_line_2').click(function() {
+
+		var offset = $('.programdiv').offset();
+		$('html').animate({ scrollTop: offset.top }, 400);
+
+	});
+
+	$('#menu_a_line_3').click(function() {
+
+		var offset = $('.trainersdiv').offset();
+		$('html').animate({ scrollTop: offset.top }, 400);
+
+	});
+
+});
