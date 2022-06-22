@@ -110,6 +110,11 @@ $("input:radio[name='page']").click(function() {
 });
 
 
+$('.homediv').animate({
+	opacity:'1'
+	}, 500);
+
+
 var selectMenuId = "";
 var selectMenu = false;
 

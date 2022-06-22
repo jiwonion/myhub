@@ -7,7 +7,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="/css/home.css">
-<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="/js/home.js" defer></script>
 <meta charset="UTF-8">
 <title>MARINE GYM</title>
@@ -15,41 +15,41 @@
 
 <body>
 
-	
+
+	<div class="homediv" id="homediv">
 
 
-	<div class="menudiv">
+		<div class="menudiv">
 
 
-		<div class="menu_sub_div">
-			<ul>
-				<li><a class="menu_a" id="menu_a_line_1">HOME</a></li>
-				<li><a class="menu_a" id="menu_a_line_2">PROGRAM</a></li>
-				<li><a class="menu_a" id="menu_a_line_3">TRAINERS</a></li>
-				<li><a class="menu_a" id="menu_a_line_4">SERVICES</a></li>
-				<li><a class="menu_a" id="menu_a_line_5">MARCHINE</a></li>
-				<li><a class="menu_a" id="menu_a_line_6">CONTACT</a></li>
+			<div class="menu_sub_div">
+				<ul>
+					<li><a class="menu_a" id="menu_a_line_1">HOME</a></li>
+					<li><a class="menu_a" id="menu_a_line_2">PROGRAM</a></li>
+					<li><a class="menu_a" id="menu_a_line_3">TRAINERS</a></li>
+					<li><a class="menu_a" id="menu_a_line_4">SERVICES</a></li>
+					<li><a class="menu_a" id="menu_a_line_5">MARCHINE</a></li>
+					<li><a class="menu_a" id="menu_a_line_6">CONTACT</a></li>
 
-			</ul>
+				</ul>
 
+			</div>
 		</div>
-	</div>
-	<div class="logodiv">
-		<div class="menuImg_Logo" onClick="window.location.reload()"></div>
-	</div>
+		<div class="logodiv">
+			<div class="menuImg_Logo" onClick="window.location.reload()"></div>
+		</div>
 
-	<div style="position: fixed; right: 0;">
-		<div class="menuImg_blog"></div>
-		<div class="menuImg_insta"></div>
-	</div>
+		<div style="position: fixed; right: 0;">
+			<div class="menuImg_blog"></div>
+			<div class="menuImg_insta"></div>
+		</div>
 
 
-	<div class="homediv" id = "homediv">
 		<div
 			style="background: url('Image/home_background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%; height: 100%;">
 
 			<div
-				style="position: fixed; width: 10px; height: 90px; right: 0; top: 50%; margin-right: 30px; margin-top: -44px;">
+				style="position: fixed; width: 10px; height: 90px; right: 0; top: 50%; margin-right: 30px; margin-top: -44px;" id="radiodiv">
 				<input class="homediv-input-radio" type='radio' name='page'
 					value='home' checked /> <input class="homediv-input-radio"
 					type='radio' name='page' value='program' /> <input
@@ -58,6 +58,25 @@
 					type='radio' name='page' value='services' />
 			</div>
 
+
+			<div
+				style="position: absolute; left: 50%; width: 20px; height: 20px; bottom: 7%; margin-left: -10px;"
+				id="scrollmove">
+				<img src="Image/mousescroll_back.png" width="20px" height="40px"
+					style="position: absolute;"> <img
+					src="Image/mousescroll_ball.png" width="20px" height="20px"
+					class="updown">
+			</div>
+
+			<a
+				style="color: #006BFF; font-size: 150px; position: absolute; top: 20%; margin-left: 100px;">MARINE</a>
+			<a
+				style="color: white; font-size: 150px; position: absolute; top: 20%; margin-left: 700px;">GYM</a>
+			<br>
+			<a style ="color: white; font-size: 100px; position:absolute; top: 40%; margin-left:100px;">EXERCISE
+			CENTER</a>
+			<br>
+			<a style ="color: white; font-size: 50px; position:absolute; top: 56%; margin-left:100px;">다이어트· 몸짱 · 재활 전문</a>
 		</div>
 	</div>
 
@@ -73,9 +92,9 @@
 
 		</div>
 	</div>
-	
+
 	<div class="servicesdiv">
-		<div style="background-color:blue; width: 100%; height: 100%;">
+		<div style="background-color: blue; width: 100%; height: 100%;">
 
 		</div>
 	</div>
