@@ -34,7 +34,7 @@ li {
 }
 
 .menuImg_Logo {
-	background: url('../Image/marinegym_Logo_Blue.png');
+	background: url('../Image/logo.png');
 	float: left;
 	width: 100px;
 	height: 70px;
@@ -85,6 +85,7 @@ li {
 
 .menu_sub_div {
 	margin: auto;
+	margin-left: 70px;
 }
 
 .menu_sub_div_min {
@@ -175,34 +176,16 @@ input[type="radio"]:checked:before {
        opacity:1;
        transform:none;    
   }
+}  
+
+input[type="checkbox"], .hamburger-lines{
+	display:none;
 }
 
-@media ( max-width :1110px) {
-	.menu_sub_div {
-		width: 500px;
-	}
-	.menuImg_insta {
-		margin-right: 15px;
-	}
-	.menudiv li {
-		margin-top: 12px;
-	}
-	#menu_a_line_1 {
-		padding-left: 12px;
-	}
-	#menu_a_line_2 {
-		padding-left: 13px;
-	}
-	#menu_a_line_3 {
-		padding-left: 2px;
-	}	
-	
-	.hometext{
-	 	width: 700px;
-	 	height:300px;
-	 	margin-top:-150px;
-	}
+@media (max-width: 1005px){
+		
 }
+
 
 @media ( max-width :800px) {
 	.menudiv li {
