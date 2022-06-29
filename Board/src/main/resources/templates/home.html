@@ -2,12 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/css/home.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="/js/home.js" defer></script>
-	<meta charset="UTF-8">
-	<title>MARINE GYM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/home.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="/js/home.js" defer></script>
+<meta charset="UTF-8">
+<title>MARINE GYM</title>
 </head>
 
 <body>
@@ -17,12 +17,12 @@
 		<div class="menudiv">
 			<div class="menu_sub_div">
 				<ul>
-					<li><a class="menu_a" id="menu_a_line_1">HOME</a></li>
-					<li><a class="menu_a" id="menu_a_line_2">PROGRAM</a></li>
-					<li><a class="menu_a" id="menu_a_line_3">TRAINERS</a></li>
-					<li><a class="menu_a" id="menu_a_line_4">SERVICES</a></li>
-					<li><a class="menu_a" id="menu_a_line_5">MARCHINE</a></li>
-					<li><a class="menu_a" id="menu_a_line_6">CONTACT</a></li>
+					<li><a id="menu_a_line_1">HOME</a></li>
+					<li><a id="menu_a_line_2">PROGRAM</a></li>
+					<li><a id="menu_a_line_3">TRAINERS</a></li>
+					<li><a id="menu_a_line_4">SERVICES</a></li>
+					<li><a id="menu_a_line_5">MARCHINE</a></li>
+					<li><a id="menu_a_line_6">CONTACT</a></li>
 				</ul>
 
 			</div>
@@ -32,52 +32,64 @@
 			<div class="menuImg_Logo" onClick="window.location.reload()"></div>
 		</div>
 
-		<div style="position: fixed; right: 0;" class="menuImgdiv">
+		<div style="position: fixed; right: 0;">
 			<div class="menuImg_blog"></div>
 			<div class="menuImg_insta"></div>
 		</div>
 
 		<div class="hamburger-container">
-			<input id="menu-toggle" type="checkbox"></input>
-			<label class="menu-btn" for="menu-toggle">
-			<span></span>
+			<input id="menu-toggle" type="checkbox"></input> <label
+				class="menu-btn" for="menu-toggle"> <span></span>
 			</label>
 
 			<ul class="menu-items">
-			<!--<li><a class="menu_a" id="menu_a_line_1">HOME</a></li>
-			<li><a class="menu_a" id="menu_a_line_2">PROGRAM</a></li>
-			<li><a class="menu_a" id="menu_a_line_3">TRAINERS</a></li>
-			<li><a class="menu_a" id="menu_a_line_4">SERVICES</a></li>
-			<li><a class="menu_a" id="menu_a_line_5">MARCHINE</a></li>
-			<li><a class="menu_a" id="menu_a_line_6">CONTACT</a></li>-->
-		</ul>
+			
+				<li><a class="menu-item" id="menu_a_line_1">HOME</a></li>
+				<li><a class="menu-item" id="menu_a_line_2">PROGRAM</a></li>
+				<li><a class="menu-item" id="menu_a_line_3">TRAINERS</a></li>
+				<li><a class="menu-item" id="menu_a_line_4">SERVICES</a></li>
+				<li><a class="menu-item" id="menu_a_line_5">MARCHINE</a></li>
+				<li><a class="menu-item" id="menu_a_line_6">CONTACT</a></li>
+				
+				<li>  <div class="hamburger-logo" style="margin-left:15px; margin-top:20px;"></div></li>
+			</ul>
+			
 		</div>
 		<div
 			style="background: url('Image/home_background.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; width: 100%; height: 100%;">
 
-			<div style="position: fixed; width: 10px; height: 90px; right: 0; top: 50%; margin-right: 30px; margin-top: -44px;"
+			<div
+				style="position: fixed; width: 10px; height: 90px; right: 0; top: 50%; margin-right: 30px; margin-top: -42px;"
 				id="radiodiv">
-				<input class="homediv-input-radio" type='radio' name='page' value='home' checked /> <input
-					class="homediv-input-radio" type='radio' name='page' value='program' /> <input
-					class="homediv-input-radio" type='radio' name='page' value='trainers' /> <input
-					class="homediv-input-radio" type='radio' name='page' value='services' />
+				<input class="homediv-input-radio" type='radio' name='page'
+					value='home' checked /> <input class="homediv-input-radio"
+					type='radio' name='page' value='program' /> <input
+					class="homediv-input-radio" type='radio' name='page'
+					value='trainers' /> <input class="homediv-input-radio"
+					type='radio' name='page' value='services' />
 			</div>
 
 
-			<div style="position: absolute; left: 50%; width: 20px; height: 20px; bottom: 7%; margin-left: -10px;"
+			<div
+				style="position: absolute; left: 50%; width: 20px; height: 20px; bottom: 7%; margin-left: -10px;"
 				id="scrollmove">
-				<img src="Image/mousescroll_back.png" width="20px" height="40px" style="position: absolute;"> <img
-					src="Image/mousescroll_ball.png" width="20px" height="20px" class="updown">
+				<img src="Image/mousescroll_back.png" width="20px" height="40px"
+					style="position: absolute;"> <img
+					src="Image/mousescroll_ball.png" width="20px" height="20px"
+					class="updown">
 			</div>
 
 			<div class="container">
-				<div style="font-size: 80px; color: #006BFF; text-align: center; line-height: 70px;" class="water-fill">
-					MARINE GYM</div>
+				<div
+					style="font-size: 80px; color: #006BFF; text-align: center; line-height: 70px;"
+					class="water-fill">MARINE GYM</div>
 				<br>
-				<div style="font-size: 50px; text-align: center; color: white; line-height: 40px;">EXERCISE
+				<div
+					style="font-size: 50px; text-align: center; color: white; line-height: 40px;">EXERCISE
 					CENTER</div>
 				<br>
-				<div style="font-size: 30px; text-align: center; color: white; line-height: 40px;">다이어트
+				<div
+					style="font-size: 30px; text-align: center; color: white; line-height: 40px;">다이어트
 					· 몸짱 · 재활 전문</div>
 
 				<!--  <img src="Image/hometext.png" width="1000px" height="450px" class="hometext"> -->
