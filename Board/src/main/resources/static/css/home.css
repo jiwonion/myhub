@@ -24,7 +24,7 @@ li {
 
 .menudiv ul {
 	/*text-align: center;*/
-		padding-inline-start: 85px;
+		padding-inline-start: 75px;
 }
 
 .menudiv li a {
@@ -34,10 +34,10 @@ li {
 .menuImg_Logo{
 	background: url('../Image/logo.png');
 	float: left;
-	width: 100px;
-	height: 70px;
+	width: 70px;
+	height: 50px;
 	background-size: cover;
-	margin-top: 18px;
+	margin-top: 27px;
 	margin-right: 25px;
 	margin-left: 25px;
 }
@@ -83,7 +83,7 @@ li {
 
 .menu_sub_div {
 	margin: auto;
-	margin-left: 70px;
+	margin-left: 55px;
 }
 
 .menu_sub_div_min {
@@ -163,7 +163,7 @@ input[type="radio"]:checked:before {
 	top: 50%;
     margin-top: -100px;
     left: 50%;
-    margin-left: -265px;
+    margin-left: -250px;
     height:250px;
 }
 
@@ -212,7 +212,7 @@ input[type="radio"]:checked:before {
 	width:26px;
 	height:26px;
 	cursor:pointer;
-	z-index: 10;
+	z-index: 20;
 }
   
 .menu-btn > span, .menu-btn > span::before, .menu-btn > span::after{
@@ -255,7 +255,7 @@ input[type="radio"]:checked:before {
 	background-color: #DDDDDD;
 	box-shadow: 2px 2px 6px rgba(0,0,0, .4);
 	transition-duration: .25s;
-	z-index: 5;
+	z-index: 15;
 	opacity: 0.7;
 	padding:70px 0;
 }
@@ -278,23 +278,94 @@ input[type="radio"]:checked:before {
 	background-color: #B8B8B8;
 }
 
-@media (max-width: 1005px){
+.marinegym-text{
+	font-size: 80px; 
+	color: #006BFF; 
+	text-align: center; 
+	line-height: 70px;
+}
+
+.exercisecenter-text{
+	font-size: 50px; 
+	text-align: center; 
+	color: white; 
+	line-height: 40px;
+}
+
+.diet-text{
+	font-size: 30px; 
+	text-align: center; 
+	color: white; 
+	line-height: 40px;
+}
+
+@media (max-width: 900px){
 	
  .hamburger-container{
 	position:absolute;
 	display:block;
 }
 
+.menuImg_Logo{
+	width:60px;
+	height:40px;	
+	margin-top: 12px;
+}
+
 .logodiv{
-	display:none;
+	margin-left: 40px;	
 }
 
 .menudiv{
 	display:none;
 }
 
-.menuImg_blog, .menuImg_insta{
-	margin-top:20px;
+}
+
+@media (max-width: 650px){
+	
+.marinegym-text{
+	font-size:40px;
+	line-height: 30px;
+	}
+	
+.exercisecenter-text{
+	font-size: 25px; 
+	line-height: 15px;
+}
+
+.diet-text{
+	font-size: 15px;
+    line-height: 10px;
+}
+	
+.container{
+margin-left: -125px;
+margin-top: -50px;
+}
+
+}
+
+@media (max-height: 480px){
+	
+.marinegym-text{
+	font-size:40px;
+	line-height: 30px;
+	}
+	
+.exercisecenter-text{
+	font-size: 25px; 
+	line-height: 15px;
+}
+
+.diet-text{
+	font-size: 15px;
+    line-height: 10px;
+}
+	
+.container{
+margin-left: -125px;
+margin-top: -50px;
 }
 
 }

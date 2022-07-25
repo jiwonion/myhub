@@ -118,63 +118,70 @@ $('.homediv').animate({
 var selectMenuId = "";
 var selectMenu = false;
 
-$('#menu_a_line_1').hover(function() {
+mainInit();
+
+function mainInit(){	
+ menuMove('#menu_a_line_1',1);
+ menuMove('.subitem1',1,"item");
+ 
+ menuMove('#menu_a_line_2',2);
+ menuMove('.subitem2',2,"item");
+ 
+ menuMove('#menu_a_line_3',3);
+ menuMove('.subitem3',3,"item");
+ 
+ menuMove('#menu_a_line_4',4);
+ menuMove('.subitem4',4,"item");
+ 
+ menuHover('#menu_a_line_1');
+ menuHover('#menu_a_line_2');
+ menuHover('#menu_a_line_3');
+ menuHover('#menu_a_line_4');
+}
+
+function menuHover(id){
+	$(id).hover(function() {
 	$(this).css("color", "#006BFF");
-}, function() {
-	if (selectMenuId != '#menu_a_line_1')
+	}, function() {
+	if (selectMenuId != id)
 		$(this).css("color", "#B4C7E7");
-});
+	});
 
-$('#menu_a_line_1').click(function() {
+}
 
-	var offset = $('.homediv').offset();
+
+function menuMove(id, num, value){
+	
+	var pageID;
+	
+	   switch(num){
+	case 1: pageID = ".homediv"; break;
+	case 2: pageID = ".programdiv"; break;
+	case 3: pageID = ".trainersdiv"; break;
+	case 4: pageID = ".servicesdiv"; break; 
+	}
+
+	
+	$(id).click(function() { 
+
+	var offset = $(pageID).offset();
 	$('html').animate({ scrollTop: offset.top }, 400);
-	menuColor(1);
+	menuColor(num);
 	selectMenu = true;
+	
+		if(value == "item")	{
+		$('#menu-toggle').prop('checked',false);
+	}	
+	
+	});
+
+}
+
+$('html').click(function(e){
+	if(!$(e.target).hasClass("menu-items") && $('.menu-items').offset().left == 0){		
+		$('#menu-toggle').prop('checked',false);
+	}
 });
 
-$('#menu_a_line_2').hover(function() {
-	$(this).css("color", "#006BFF");
-}, function() {
-	if (selectMenuId != '#menu_a_line_2')
-		$(this).css("color", "#B4C7E7");
-});
 
-$('#menu_a_line_2').click(function() {
-
-	var offset = $('.programdiv').offset();
-	$('html').animate({ scrollTop: offset.top }, 400);
-	menuColor(2);
-	selectMenu = true;
-});
-
-$('#menu_a_line_3').hover(function() {
-	$(this).css("color", "#006BFF");
-}, function() {
-	if (selectMenuId != '#menu_a_line_3')
-		$(this).css("color", "#B4C7E7");
-});
-
-$('#menu_a_line_3').click(function() {
-
-	var offset = $('.trainersdiv').offset();
-	$('html').animate({ scrollTop: offset.top }, 400);
-	menuColor(3);
-	selectMenu = true;
-});
-
-$('#menu_a_line_4').hover(function() {
-	$(this).css("color", "#006BFF");
-}, function() {
-	if (selectMenuId != '#menu_a_line_4')
-		$(this).css("color", "#B4C7E7");
-});
-
-$('#menu_a_line_4').click(function() {
-
-	var offset = $('.servicesdiv').offset();
-	$('html').animate({ scrollTop: offset.top }, 400);
-	menuColor(4);
-	selectMenu = true;
-});
 
