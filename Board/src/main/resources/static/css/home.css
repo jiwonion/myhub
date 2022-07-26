@@ -16,10 +16,11 @@ li {
 	display: inline-block;
 	height: 100%;
 	text-align: center;
-	margin-right: 40px;
+	margin-right: 25px;
 	color: #B4C7E7;
 	margin-top: 25px;
-	font-size: large;
+	font-size: 17px;
+	font-family:sbLight;
 }
 
 .menudiv ul {
@@ -279,17 +280,19 @@ input[type="radio"]:checked:before {
 }
 
 .marinegym-text{
-	font-size: 80px; 
+	font-size: 70px; 
 	color: #006BFF; 
 	text-align: center; 
 	line-height: 70px;
+	font-family:"sbBold";
 }
 
 .exercisecenter-text{
-	font-size: 50px; 
+	font-size: 43px; 
 	text-align: center; 
 	color: white; 
 	line-height: 40px;
+	font-family:"sbBold";
 }
 
 .diet-text{
@@ -297,6 +300,31 @@ input[type="radio"]:checked:before {
 	text-align: center; 
 	color: white; 
 	line-height: 40px;
+	font-family:"sbBold";
+}
+
+@font-face{
+	font-family: "gothic";
+	src: url("../font/Gothic.otf")
+}
+
+@font-face{
+	font-family: "gothicBold";
+	src: url("../font/GothicBold.otf")
+}
+
+@font-face{
+	font-family: "sbBold";
+	src: url("../font/SBBold.otf")
+}
+
+@font-face{
+	font-family: "sbLight";
+	src: url("../font/SBLight.otf")
+}
+@font-face{
+	font-family: "sbMidium";
+	src: url("../font/SBMidium.otf")
 }
 
 @media (max-width: 900px){
